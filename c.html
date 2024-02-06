@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <style>
+        .darkmode {
+            background-color: #39232a;
+            text-align: center;
+            font-size: 25px;
+            font-family: Georgia;
+            color: #a59a9e;
+        }
+
+        .blog {
+            background-color: rgb(233, 213, 213);
+        }
+
+        .Comments {
+            text-align: left;
+            font-size: 85%;
+        }
+    </style>
+</head>
+
+<body class="darkmode">
+    <h>Blog</h>
+    <div class="blog">
+        <h2>The Power of Self-Compassion: Nurturing Kindness Within</h2>
+        <p>In a world that often emphasizes productivity, achievement, and perfection, we can easily forget to extend kindness and compassion to ourselves. Yet, self-compassion is a powerful tool that can transform our relationship with ourselves and the world around us. In this blog, we'll explore the importance of self-compassion and how nurturing kindness within can lead to greater well-being and fulfillment.</p>
+        <button onclick=toggle()>&hearts;</button>
+        <p id="heart"></p>
+        <div class="Comments">
+            <h4>Comments</h4>
+            <p>User1: Wow, very intriguing!</p>
+            <p>User2: Thank you for inspiring me.</p>
+        </div>
+    </div>
+    <script>
+        if (localStorage.getItem("likeb2") == null) {
+            localStorage.setItem("likeb2", 0);
+        }
+        document.getElementById("heart").innerHTML = localStorage.getItem("likeb2");
+        function toggle() {
+            console.log(localStorage.getItem("likeb2"));
+            localStorage.setItem("likeb2", parseInt(localStorage.getItem("likeb2")) + 1)
+            document.getElementById("heart").innerHTML = localStorage.getItem("likeb2");
+        }
+
+    </script>
+</body>
+
+</html>

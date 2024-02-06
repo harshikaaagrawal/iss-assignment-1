@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Harshikaa Agrawal</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            display: flexbox;
+        }
+
+        .flexcontainerall {
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        .darkmode {
+            background-color: #39232a;
+            text-align: center;
+            font-size: 25px;
+            font-family: Georgia;
+            color: #a59a9e;
+        }
+
+        .lightmode {
+            background-color: #c0b2b7;
+            text-align: center;
+            font-size: 25px;
+            font-family: Georgia;
+            color: #594044;
+
+        }
+
+        .img1 {
+            width: max(300px, 20%);
+            height: auto;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        .icon {
+
+            border-radius: 1%;
+            width: 2%;
+        }
+
+        .education {
+            margin: auto 0;
+        }
+
+        .navigationbar {
+
+            background-color: #594044;
+            display: flex;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 7%;
+            border: outset solid #a59a9e;
+
+        }
+
+
+
+        .navigationbar>a {
+            display: block;
+            color: #a59a9e;
+            text-align: center;
+
+            padding-top: 0.5%;
+            flex: 1;
+            height: 85%;
+            margin: auto;
+
+            /* border-left: solid #a59a9e;
+            border-right: solid #a59a9e; */
+
+            transform: scale(1, 1);
+            transition: transform 0.5s ease;
+
+            text-decoration: none;
+        }
+
+        .navigationbar>a:hover {
+            background-color: #e8ccc8;
+            color: #594044;
+
+            transform: scale(1.05, 1.05);
+        }
+
+        /* 
+        section {
+            width: 100vw;
+            height: 100vh;
+        } */
+
+        button {
+            background-color: #77676e;
+            color: #1e0b15;
+            border-radius: 10%;
+
+        }
+
+        .sidebyside {
+            display: flex;
+            margin: 2%;
+        }
+
+        #Home {
+            margin-bottom: 14%;
+        }
+
+        .textforsection {
+            display: flexbox;
+            margin-top: 10%;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        .achievementsdiv {
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 40%;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid;
+            width: 90%;
+        }
+
+        th,
+        td {
+            border: 5px solid #77676e;
+        }
+
+        #Skills {
+            margin-bottom: 10%;
+        }
+
+        .skilldescription {
+            margin-left: 15%;
+            margin-right: 15%;
+            text-align: center;
+            border: solid #77676e 5px;
+            padding: 1%;
+            border-radius: 20px;
+        }
+
+        .More {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            height: 10%;
+            top: 90%;
+            background: #594044;
+            color: #a59a9e;
+        }
+
+        .blog {
+            background-color: rgb(233, 213, 213);
+        }
+
+        .modebutton {
+            margin-bottom: 0.7%;
+            margin-top: 0.3%;
+        }
+    </style>
+</head>
+
+<body class="lightmode">
+    <div class="navigationbar">
+        <a href="#Home">About</a>
+        <a href="#Education">Education</a>
+        <a href="#Achievements">Achievements</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Blog">Blog</a>
+
+    </div>
+    <div class="flexcontainerall">
+        <section id="Home">
+            <div class="sidebyside">
+                <div>
+                    <h2 class="textforsection">
+                        Hi! My name is Harshikaa Agrawal<br>I'm 18 years old and I'm an undergraduate student in
+                        Hyderabad.
+                    </h2>
+                </div>
+                <img class="img1" src="harshikaa.jpeg" alt="Harshikaa's Picture">
+            </div>
+        </section>
+
+        <section style="margin-bottom:10%;" id="Education" class="education">
+            <br><br>
+            <h3>Education</h3>
+            <p style="font-size: 25px;font-weight: bold">International Institute of Information Technology, Hyderabad
+            </p>
+            <p style="font-size: 10px;">2023 - Present</p>
+            <p style="font-size: 15px;">Dual Degree in Computing and Human Sciences</p>
+            <br>
+            <p style="font-size: 25px; font-weight: bold">Delhi Public School, R. K. Puram, Delhi</p>
+            <p style="font-size: 10px;">2021 - 2023</p>
+            <p style="font-size: 15px;">Exun Clan - Computer Science Club</p>
+            <br>
+            <p style="font-size: 25px; font-weight: bold;">Heritage Xperiential Learning School,</p>
+            <p style="font-size: 10px;">2009 - 2021</p>
+            <p style="font-size: 15px;">Student Council, Gymnastics</p>
+        </section>
+
+        <section id="Achievements" , class="achievementsdiv">
+            <br><br><br>
+            <h3>Achievements</h3>
+
+            <table>
+                <tr>
+                    <th>Award</th>
+                    <th>Organisation</th>
+                </tr>
+                <tr>
+                    <td>National Fair Finalist</td>
+                    <td>Initiative for Research & Innovation in STEM</td>
+                </tr>
+                <tr>
+                    <td>National Bronze & Regional Gold</td>
+                    <td>Initiative for Research & Innovation in STEM</td>
+                </tr>
+                <tr>
+                    <td>Runner Up - Team</td>
+                    <td>Panini Linguistics Olympiad Training Camp</td>
+                </tr>
+            </table>
+        </section>
+        <section id="Skills">
+            <br><br><br>
+            <h3>Skills</h3>
+            <p class="skilldescription">
+                As an aspiring developer and dedicated learner, I am actively honing my skills in various programming
+                languages and technologies. Currently, I'm delving into the intricacies of C++, Python, HTML, CSS, and
+                JavaScript, eagerly exploring their applications in web development. Moreover, I'm diving into Coq for
+                formal verification and MySQL for database management, excited to broaden my understanding of software
+                engineering principles. Through hands-on projects and continuous learning, I am steadily building a
+                strong foundation in software development, with a keen focus on mastering each language and technology
+                to create innovative solutions in the future.
+            </p>
+            <a style="text-decoration: none; color:#77676e ;" class="resumelink"
+                href="Harshikaa Agrawal - Resume.pdf">Here's my resume!</a>
+    </div>
+
+
+
+    </section>
+
+    <section style="margin-top: 10%; margin-bottom: 20%;" id="Blog">
+        <h3>Blog</h3>
+        <div class="blog">
+            <h4>Embracing Change: Navigating Life's Transitions with Grace</h4>
+            <p>Change is the only constant in life. From the shifting seasons to the evolution of technology, our
+                existence is defined by flux...</p>
+            Read the full blog post <a href="b.html" target="_blank">here</a>
+        </div>
+        <div class="blog">
+            <h4>The Power of Self-Compassion: Nurturing Kindness Within</h4>
+            <p>In a world that often emphasizes productivity, achievement, and perfection, we can easily forget to
+                extend kindness and compassion to ourselves...</p>
+            Read the full blog post <a href="c.html" target="_blank">here</a>
+        </div>
+    </section>
+    </div>
+
+    <div class="More">
+        <button class="modebutton" onclick="togglebackground()">Toggle mode</button>
+        <!-- <h3 style="margin-bottom: 1%; margin-top:0.5%;">Reach out to me!</h3> -->
+        <div style="margin: auto; margin-top:0;">
+            <a href="mailto:agrawalharshikaa@gmail.com"><img src="mail.svg" class="icon"></a>
+            <a href="https://github.com/harshikaaagrawal"><img src="github.svg" class="icon"></a>
+        </div>
+    </div>
+
+    <script>
+        function togglebackground() {
+            document.body.classList.toggle("darkmode");
+            document.body.classList.toggle("lightmode");
+        }
+
+    </script>
+
+
+</body>
+
+</html>

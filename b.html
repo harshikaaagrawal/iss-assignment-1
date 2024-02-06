@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <style>
+        .darkmode {
+            background-color: #39232a;
+            text-align: center;
+            font-size: 25px;
+            font-family: Georgia;
+            color: #a59a9e;
+        }
+
+        .blog {
+            background-color: rgb(233, 213, 213);
+        }
+        .Comments{
+            text-align: left;
+            font-size: 85%;
+        }
+    </style>
+</head>
+
+<body class="darkmode">
+    <h>Blog</h>
+    <div class="blog">
+        <h2>Embracing Change: Navigating Life's Transitions with Grace</h2>
+        <p>Change is the only constant in life. From the shifting seasons to the evolution of technology, our existence is defined by flux. Yet, despite its inevitability, change often unsettles us, leaving us feeling uncertain and apprehensive about the future. In this blog, we'll explore the art of embracing change and navigating life's transitions with grace.</p>
+        <button onclick=toggle()>&hearts;</button>
+        <p id="heart"></p>
+        <div class = "Comments">
+        <h4>Comments</h4>
+        <p>User1: That's so interesting!</p>
+        <p>User2: Thank you for the incite.</p>
+    </div>
+    </div>
+    <script>
+        if (localStorage.getItem("likeb1") == null) {
+            localStorage.setItem("likeb1", 0);
+        }
+        document.getElementById("heart").innerHTML = localStorage.getItem("likeb1");
+        function toggle(){
+            console.log(localStorage.getItem("likeb1"));
+            localStorage.setItem("likeb1", parseInt(localStorage.getItem("likeb1"))+1)
+            document.getElementById("heart").innerHTML = localStorage.getItem("likeb1");
+        }
+
+    </script>
+</body>
+
+</html>
